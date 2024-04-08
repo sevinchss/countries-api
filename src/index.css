@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: 'Ubuntu', sans-serif;
+ 
+}
+
+@layer base {
+  :root {
+    --darkBlue: #111517;
+    --LightGray: hsl(0, 0%, 98%);
+    --white: #ffffff;
+  }
+
+  .dark {
+    --darkBlue: #dee3e8;
+    --LightGray: #202c37;
+    --white: #2b3945;
+  }
+}
+
+
+
+
+
