@@ -91,19 +91,17 @@ const Countries = () => {
             />
             {/* FILTER SECTION */}
             <select
-              name="filter-by-region"
-              id="filter-by-region"
-              className={`w-52 py-3 outline-none shadow rounded bg-background
-                  text-text `}
-              value={selectedRegion}
-              onChange={handleRegionChange}
-            >
-              {regions.map((region, index) => (
-                <option key={index} value={region.name}>
-                  {region.name}
-                </option>
-              ))}
-            </select>
+                        value={selectedRegion}
+                        onChange={handleRegionChange}
+                        classNam="px-3 py-2.5 rounded-[7px] bg-background border text-text focus:outline-none border-text"
+                    >
+                        <option value="" className='bg-background'>All Regions</option>
+                        <option value="africa" className='bg-background'>Africa</option>
+                        <option value="americas" className='bg-background'>Americas</option>
+                        <option value="asia" className='bg-background'>Asia</option>
+                        <option value="europe" className='bg-background'>Europe</option>
+                        <option value="oceania" className='bg-background'>Oceania</option>
+                    </select>
           </div>
           {/* COUNTRIES IN DOM */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
